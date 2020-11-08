@@ -1,9 +1,7 @@
 package main.services;
 
-import main.model.Menu;
-import main.model.User;
-import main.repo.MenuRepo;
-import main.repo.UserRepo;
+import main.models.Menu;
+import main.repository.MenuRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

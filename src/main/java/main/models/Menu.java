@@ -1,6 +1,9 @@
-package main.model;
+package main.models;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
 @Table(name = "menu")
@@ -9,10 +12,13 @@ public class Menu {
     @Id
     @Column(name="id")
     private int id;
+
     @Column(name="name")
     private String name;
+
     @Column(name="price")
     private String price;
+
     @Column(name="image")
     private String img;
 

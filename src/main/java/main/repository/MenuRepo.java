@@ -1,9 +1,9 @@
-package main.repo;
+package main.repository;
 
-import main.model.User;
+import main.models.Menu;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface UserRepo extends JpaRepository<User, Integer> {
+public interface MenuRepo extends JpaRepository<Menu, Integer> {
 }
