@@ -17,12 +17,19 @@ public class Menu {
     private String name;
 
     @Column(name="price")
-    private String price;
+    private double price;
 
     @Column(name="image")
     private String img;
 
     public Menu() {
+    }
+
+    public Menu(int id, String name, double price, String img) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.img = img;
     }
 
     public int getId() {
@@ -41,11 +48,11 @@ public class Menu {
         this.name = name;
     }
 
-    public String getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
@@ -55,5 +62,15 @@ public class Menu {
 
     public void setImg(String img) {
         this.img = img;
+    }
+
+    @Override
+    public String toString() {
+        return "Menu{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", price='" + price + '\'' +
+                ", img='" + img + '\'' +
+                '}';
     }
 }

@@ -1,0 +1,26 @@
+*****************
+Hello User
+*****************
+
+Please enter two integers : 5 9
+Choose one operation
+1.SUM
+2.MINUS
+3.MULTIPLIES
+4.DIVISION
+5.POWER
+1
+You selected sum function : 5 + 9 = 14
+Do you want to make another operation (YES/NO) : YES
+Choose one operation
+1.SUM
+2.MINUS
+3.MULTIPLIES
+4.DIVISION
+5.POWER
+2
+You selected minus function : 5 - 9 = -4
+Do you want to make another operation (YES/NO) : NO
+
+**************
+Thank you for using calculator program
