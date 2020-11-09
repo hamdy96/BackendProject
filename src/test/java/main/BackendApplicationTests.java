@@ -74,7 +74,7 @@ class BackendApplicationTests {
 		items.add(item);
 		roles.add(role);
 
-		Order order = new Order(1,user,200,items);
+		Order order = new Order(1,user,items);
 
 		when(mr.findByName("Chicken Ranch")).thenReturn(item);
 		when(or.findById(1)).thenReturn(Optional.of(order));

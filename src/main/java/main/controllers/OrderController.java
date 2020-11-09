@@ -13,8 +13,6 @@ import java.util.List;
 @RestController
 public class OrderController {
 
-
-
     @Autowired
     OrderService os ;
 
@@ -25,7 +23,8 @@ public class OrderController {
 
     @PostMapping("/orders")
     public void newOrder(@RequestBody Order order){
-
+        order.setTotal(order.getTotal());
         os.newOrder(order);
     }
+
 }
