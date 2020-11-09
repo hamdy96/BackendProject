@@ -51,7 +51,7 @@ public class Order {
     }
 
     public void setId(int id) {
-        this.id = id;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            this.id = id;
     }
 
     public User getUser() {

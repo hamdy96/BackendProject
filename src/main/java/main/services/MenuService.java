@@ -20,4 +20,5 @@ public class MenuService {
     public void newMenu(Menu menu){
         mr.save(menu);
     }
+
 }
