@@ -1,7 +1,7 @@
-package main.repo;
+package main.service;
 
 import main.models.Menu;
-import main.repository.MenuRepo;
+import main.repository.MenuRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +11,7 @@ import java.util.List;
 public class MenuService {
 
     @Autowired
-    MenuRepo mr;
+    MenuRepository mr;
 
     public List<Menu> getAll(){
         return mr.findAll();
@@ -19,6 +19,10 @@ public class MenuService {
 
     public void newMenu(Menu menu){
         mr.save(menu);
+    }
+
+    public Menu findByName(String name){
+        return mr.findByName(name);
     }
 
 }

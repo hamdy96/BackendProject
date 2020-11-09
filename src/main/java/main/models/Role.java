@@ -14,7 +14,7 @@ public class Role {
 	@Column(name ="roles_name")
 	private ERole name;
 
-	public Role() {
+	public Role(){
 
 	}
 

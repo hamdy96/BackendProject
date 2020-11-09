@@ -1,7 +1,7 @@
 package main.controllers;
 
 import main.models.Menu;
-import main.services.MenuService;
+import main.service.MenuService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,4 +31,10 @@ public class MenuController {
         logger.info("Post new menu items");
         ms.newMenu(menu);
     }
+    @RequestMapping(value = "/menu/{name}")
+    public void getByName(@PathVariable("name") String name){
+        logger.info("Get menu item by name");
+        ms.findByName(name);
+    }
+
 }

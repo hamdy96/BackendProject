@@ -38,11 +38,10 @@ public class Order {
 
     }
 
-    public Order(int id,Date date,User user, double total,List<Menu> items) {
+    public Order(int id,User user, double total,List<Menu> items) {
         this.user = user;
         this.total = total;
         this.id = id;
-        this.date = date;
         this.items = items;
     }
 
