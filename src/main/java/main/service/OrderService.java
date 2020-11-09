@@ -1,6 +1,5 @@
-package main.services;
+package main.repo;
 
-import main.models.Menu;
 import main.models.Order;
 import main.repository.OrderRepo;
 import org.springframework.beans.factory.annotation.Autowired;

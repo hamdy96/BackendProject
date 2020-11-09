@@ -1,4 +1,4 @@
-package main.services;
+package main.repo;
 
 import main.models.Menu;
 import main.repository.MenuRepo;
